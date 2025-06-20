@@ -1,87 +1,18 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Espejo SAT</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header style="text-align: center; padding: 15px 0;">
-    <img
-      src="data:image/png;base64,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"
-      alt="Logo Hacienda y SAT"
-      style="max-height: 55px; vertical-align: middle;"
-    />
-  </header>
+// Datos simulados para características fiscales
+const caracteristicasFiscales = {
+  "Régimen": "General de Ley Personas Morales",
+  "Fecha de alta": "15-03-1995"
+};
 
-  <main>
-    <div class="info-container">
+// Función para mostrar los datos en la página
+function mostrarCaracteristicasFiscales() {
+  const regimenElem = document.getElementById("regimen");
+  const fechaAltaElem = document.getElementById("fechaAlta");
 
-      <p class="info-msg">
-        El RFC: <strong>ZAOR611018DG0</strong>, tiene asociada la siguiente información.
-      </p>
+  if (regimenElem && fechaAltaElem) {
+    regimenElem.textContent = caracteristicasFiscales["Régimen"];
+    fechaAltaElem.textContent = caracteristicasFiscales["Fecha de alta"];
+  }
+}
 
-      <section class="info-card" id="identificacion">
-        <h2>Datos de Identificación</h2>
-        <p><strong>CURP:</strong> ZAOR611018HDFVLF05</p>
-        <p><strong>Nombre:</strong> RAFAEL</p>
-        <p><strong>Apellido Paterno:</strong> ZAVALA</p>
-        <p><strong>Apellido Materno:</strong> OLIVARES</p>
-        <p><strong>Fecha Nacimiento:</strong> 18-10-1961</p>
-        <p><strong>Fecha de Inicio de operaciones:</strong> 20-08-1980</p>
-        <p><strong>Situación del contribuyente:</strong> REACTIVADO</p>
-        <p><strong>Fecha del último cambio de situación:</strong> 01-01-2018</p>
-      </section>
-
-      <section class="info-card" id="ubicacion">
-        <h2>Datos de Ubicación (domicilio fiscal, vigente)</h2>
-        <p><strong>Entidad Federativa:</strong> CIUDAD DE MEXICO</p>
-        <p><strong>Municipio o delegación:</strong> CUAUHTEMOC</p>
-        <p><strong>Colonia:</strong> OBRERA</p>
-        <p><strong>Tipo de vialidad:</strong> </p>
-        <p><strong>Nombre de la vialidad:</strong> M JOSE OTHON</p>
-        <p><strong>Número exterior:</strong> 95</p>
-        <p><strong>Número interior:</strong> </p>
-        <p><strong>CP:</strong> 06800</p>
-        <p><strong>Correo electrónico:</strong> </p>
-        <p><strong>AL:</strong> CIUDAD DE MEXICO 2</p>
-      </section>
-
-      <section class="info-card" id="caracteristicas-fiscales">
-        <h2>Características fiscales (vigente)</h2>
-        <p><strong>Régimen:</strong> <span id="regimen-fiscal">Cargando...</span></p>
-        <p><strong>Fecha de alta:</strong> <span id="fecha-alta">Cargando...</span></p>
-      </section>
-
-      <p style="text-align: center; margin-top: 15px;">
-        <a href="#" id="validar-qr-link">Validar QR (enlace con parámetro D3 modificado)</a>
-      </p>
-
-    </div>
-  </main>
-
-  <footer style="text-align: center; padding: 15px 0; font-size: 0.9em; color: #777;">
-    © 2025 Servicio de Administración Tributaria (SAT)
-  </footer>
-
-  <script src="script.js"></script>
-  <script>
-    // Script para llenar los datos dinámicos del régimen fiscal
-    document.addEventListener("DOMContentLoaded", () => {
-      // Asumiendo que 'caracteristicasFiscales' está definido en script.js
-      const regimenElem = document.getElementById("regimen-fiscal");
-      const fechaElem = document.getElementById("fecha-alta");
-
-      if (typeof caracteristicasFiscales !== "undefined") {
-        regimenElem.textContent = caracteristicasFiscales["Régimen"] || "No disponible";
-        fechaElem.textContent = caracteristicasFiscales["Fecha de alta"] || "No disponible";
-      } else {
-        regimenElem.textContent = "Datos no cargados";
-        fechaElem.textContent = "Datos no cargados";
-      }
-    });
-  </script>
-</body>
-</html>
+document.addEventListener("DOMContentLoaded", mostrarCaracteristicasFiscales);
