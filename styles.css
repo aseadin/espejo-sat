@@ -1,51 +1,113 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f7f9fa;
-  color: #212529;
+  background-color: #f4f0e7;
+  color: #000;
   margin: 0;
   padding: 0;
 }
+
 header {
-  background-color: #005a9c;
-  color: white;
-  padding: 20px 30px;
-  text-align: center;
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  gap: 20px;
 }
-header h1 {
-  margin: 0;
-  font-weight: 600;
+
+.logo-hacienda {
+  max-height: 50px;
+  object-fit: contain;
 }
+
+.logo-sat {
+  max-height: 50px;
+  object-fit: contain;
+}
+
 main {
   max-width: 900px;
-  margin: 30px auto;
-  background-color: white;
-  padding: 25px 35px;
+  margin: 20px auto;
+  padding: 0 10px 40px;
+}
+
+.message {
+  background-color: #f6f0de;
+  border: 1px solid #d1c4a0;
+  margin-bottom: 20px;
+  padding: 10px 15px;
   border-radius: 8px;
-  box-shadow: 0 3px 6px rgb(0 0 0 / 0.1);
+  box-shadow: inset 1px 1px 3px #fff9d9;
+  font-size: 1rem;
 }
-h2 {
-  border-bottom: 2px solid #005a9c;
-  padding-bottom: 6px;
-  margin-top: 30px;
+
+.box {
+  background-color: #d6c8af;
+  border: 1px solid #a99977;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: inset 1px 1px 4px #ffffff;
 }
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
+
+.box h2 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #a99977;
+  padding-bottom: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tbody tr {
+  border-bottom: 1px solid #cfc0a3;
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+td {
+  vertical-align: top;
+  padding: 6px 8px;
+  font-size: 0.95rem;
+}
+
+td:first-child {
+  font-weight: 700;
+  width: 40%;
+  padding-right: 20px;
+  white-space: nowrap;
+}
+
+.enlace-validar {
+  text-align: center;
   margin-top: 10px;
+  font-size: 1rem;
 }
-li {
-  margin-bottom: 6px;
-}
-a {
+
+.enlace-validar a {
   color: #005a9c;
   text-decoration: none;
+  font-weight: 600;
 }
-a:hover {
+
+.enlace-validar a:hover {
   text-decoration: underline;
 }
+
 footer {
   text-align: center;
   color: #696969;
-  padding: 15px 10px;
+  padding: 20px 10px;
   font-size: 0.9rem;
+  background-color: #f4f0e7;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
 }

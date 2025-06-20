@@ -4,108 +4,43 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Validador QR - SAT</title>
-<style>
-  body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f7f9fa;
-    color: #212529;
-    margin: 0;
-    padding: 0;
-  }
-  header {
-    background-color: #005a9c;
-    color: white;
-    padding: 20px 30px;
-    text-align: center;
-  }
-  header h1 {
-    margin: 0;
-    font-weight: 600;
-  }
-  main {
-    max-width: 900px;
-    margin: 30px auto;
-    background-color: white;
-    padding: 25px 35px;
-    border-radius: 8px;
-    box-shadow: 0 3px 6px rgb(0 0 0 / 0.1);
-  }
-  h2 {
-    border-bottom: 2px solid #005a9c;
-    padding-bottom: 6px;
-    margin-top: 30px;
-  }
-  ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-top: 10px;
-  }
-  li {
-    margin-bottom: 6px;
-  }
-  a {
-    color: #005a9c;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  footer {
-    text-align: center;
-    color: #696969;
-    padding: 15px 10px;
-    font-size: 0.9rem;
-  }
-</style>
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Validador QR</h1>
+    <div class="header-logos">
+      <img src="https://www.gob.mx/cms/uploads/image/file/621795/logohacienda.png" alt="Logo Hacienda" class="logo-hacienda" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Logo_SAT_Mexico.svg" alt="Logo SAT" class="logo-sat" />
+    </div>
   </header>
   <main>
-    <p>El RFC: <strong>ZAOR611018DG0</strong>, tiene asociada la siguiente información.</p>
+    <div class="message">
+      El RFC: <strong>ZAOR611018DG0</strong>, tiene asociada la siguiente información.
+    </div>
 
-    <section>
+    <section class="box">
       <h2>Datos de Identificación</h2>
-      <ul>
-        <li>CURP: ZAOR611018HDFVLF05</li>
-        <li>Nombre: RAFAEL</li>
-        <li>Apellido Paterno: ZAVALA</li>
-        <li>Apellido Materno: OLIVARES</li>
-        <li>Fecha Nacimiento: 18-10-1961</li>
-        <li>Fecha de Inicio de Operaciones: 20-08-1980</li>
-        <li>Situación del contribuyente: REACTIVADO</li>
-        <li>Fecha del último cambio de situación: 2025-06-20</li>
-      </ul>
+      <table>
+        <tbody id="identificacion"></tbody>
+      </table>
     </section>
 
-    <section>
+    <section class="box">
       <h2>Datos de Ubicación (domicilio fiscal, vigente)</h2>
-      <ul>
-        <li>Entidad Federativa: CIUDAD DE MEXICO</li>
-        <li>Municipio o delegación: CUAUHTEMOC</li>
-        <li>Colonia: OBRERA</li>
-        <li>Tipo de vialidad:</li>
-        <li>Nombre de la vialidad: M JOSE OTHON</li>
-        <li>Número exterior: 95</li>
-        <li>Número interior:</li>
-        <li>CP: 06800</li>
-        <li>Correo electrónico:</li>
-        <li>AL: CIUDAD DE MEXICO 2</li>
-      </ul>
+      <table>
+        <tbody id="ubicacion"></tbody>
+      </table>
     </section>
 
-    <section>
+    <section class="box">
       <h2>Características fiscales (vigente)</h2>
-      <ul>
-        <li>Régimen: Régimen de Personas Físicas con Actividad Empresarial</li>
-        <li>Fecha de alta: 2025-06-20</li>
-      </ul>
+      <table>
+        <tbody id="caracteristicas"></tbody>
+      </table>
     </section>
 
-    <p><strong>Enlace para validar:</strong></p>
-    <p>
-      <a href="https://siat.sat.gob.mx/app/qr/faces/pages/mobile/validadorqr.jsf?D1=10&D2=1&D3=15050243729_ZAOR611018DG02" target="_blank" rel="noopener noreferrer">
+    <p class="enlace-validar">
+      <a id="link-validar" href="#" target="_blank" rel="noopener noreferrer">
         Validar QR (enlace con parámetro D3 modificado)
       </a>
     </p>
@@ -113,5 +48,6 @@
   <footer>
     &copy; 2025 Servicio de Administración Tributaria (SAT)
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
