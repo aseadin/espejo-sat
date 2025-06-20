@@ -24,8 +24,10 @@ const datosUbicacion = {
 };
 
 const caracteristicasFiscales = {
-  "Régimen": "Régimen de Sueldos y Salarios e Ingresos Asimilados a Salarios",
-  "Fecha de alta": "01-01-2018"
+  const caracteristicasFiscales = {
+  "Régimen": "Régimen de Personas Físicas con Actividad Empresarial",
+  "Fecha de alta": "2025-06-20"
+};
 };
 
 // Función para llenar tablas con los datos
