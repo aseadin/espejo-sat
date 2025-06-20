@@ -24,9 +24,9 @@ const datosUbicacion = {
 };
 
 const caracteristicasFiscales = {
-  const caracteristicasFiscales = {
-  "Régimen": "Régimen de Personas Físicas con Actividad Empresarial",
+   "Régimen": "Régimen de Personas Físicas con Actividad Empresarial",
   "Fecha de alta": "2025-06-20"
+};
 };
 };
 
