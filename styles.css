@@ -1,113 +1,98 @@
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f0e7;
-  color: #000;
+/* Reset básico */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+body {
+  background-color: #f9f6f2;
+  padding: 20px;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 header {
-  background-color: white;
-  padding: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid #ddd;
-  gap: 20px;
-}
-
-.logo-hacienda {
-  max-height: 50px;
-  object-fit: contain;
-}
-
-.logo-sat {
-  max-height: 50px;
-  object-fit: contain;
-}
-
-main {
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 0 10px 40px;
-}
-
-.message {
-  background-color: #f6f0de;
-  border: 1px solid #d1c4a0;
+  background-color: #dfe4e7;
+  padding: 15px 0;
   margin-bottom: 20px;
-  padding: 10px 15px;
-  border-radius: 8px;
-  box-shadow: inset 1px 1px 3px #fff9d9;
-  font-size: 1rem;
+  border-bottom: 2px solid #aac4cc;
 }
 
-.box {
-  background-color: #d6c8af;
-  border: 1px solid #a99977;
+header img {
+  max-height: 70px;
+}
+
+.info-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.08);
+}
+
+.info-msg {
+  font-weight: bold;
   margin-bottom: 20px;
-  padding: 15px 20px;
-  border-radius: 8px;
-  box-shadow: inset 1px 1px 4px #ffffff;
+  color: #444;
+  font-size: 1.1em;
 }
 
-.box h2 {
-  font-weight: 600;
-  font-size: 1.1rem;
-  margin-top: 0;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #a99977;
-  padding-bottom: 5px;
+.info-card {
+  margin-bottom: 30px;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
+.info-card h2 {
+  margin-bottom: 12px;
+  color: #007A99;
+  text-shadow: 0 0 3px #007A99;
 }
 
-tbody tr {
-  border-bottom: 1px solid #cfc0a3;
+.info-card p {
+  margin-bottom: 8px;
+  font-size: 0.95em;
 }
 
-tbody tr:last-child {
-  border-bottom: none;
-}
-
-td {
-  vertical-align: top;
-  padding: 6px 8px;
-  font-size: 0.95rem;
-}
-
-td:first-child {
+.info-card strong {
   font-weight: 700;
-  width: 40%;
-  padding-right: 20px;
-  white-space: nowrap;
 }
 
-.enlace-validar {
-  text-align: center;
+#caracteristicas-fiscales span {
+  font-weight: 600;
+  color: #065a78;
+}
+
+a#validar-qr-link {
+  display: inline-block;
   margin-top: 10px;
-  font-size: 1rem;
-}
-
-.enlace-validar a {
-  color: #005a9c;
-  text-decoration: none;
+  text-decoration: underline;
+  color: #007A99;
   font-weight: 600;
 }
 
-.enlace-validar a:hover {
-  text-decoration: underline;
+a#validar-qr-link:hover {
+  color: #005f70;
 }
 
 footer {
-  text-align: center;
-  color: #696969;
-  padding: 20px 10px;
-  font-size: 0.9rem;
-  background-color: #f4f0e7;
-  border-top: 1px solid #ddd;
   margin-top: 40px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #777;
+  border-top: 1px solid #ddd;
+  padding: 15px 0 5px;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .info-container {
+    padding: 20px;
+    margin: 0 10px;
+  }
 }
